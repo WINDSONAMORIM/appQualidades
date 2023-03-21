@@ -78,7 +78,7 @@ export const Home = () => {
               src={imagem}
               style={{
                 transform: `rotate(${rotate})`,
-                width: "15%",
+                width: "150px",
                 transition: "all 1s",
               }}
             />
