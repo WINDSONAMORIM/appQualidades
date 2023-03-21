@@ -69,29 +69,32 @@ export const Home = () => {
 
   return (
     <>
-      <GridFotos>
-        <img
-          id="theme"
-          onClick={() => setToggle((state) => !state)}
-          src={imagem}
-          style={{
-            transform: `rotate(${rotate})`,
-            width: "15%",
-            transition: "all 1s",
-          }}
-        />
-      </GridFotos>
       <Grid container spacing={2}>
-        <Grid item xs={6} md={3}>
+        <Grid item xs={12} mb={5}>
+          <GridFotos>
+            <img
+              id="theme"
+              onClick={() => setToggle((state) => !state)}
+              src={imagem}
+              style={{
+                transform: `rotate(${rotate})`,
+                width: "15%",
+                transition: "all 1s",
+              }}
+            />
+          </GridFotos>
+        </Grid>
+
+        <Grid item sm={6} md={3} mt={5}>
           <CardDefault id="card1" image={bruno} onClickCard={clicked} />
         </Grid>
-        <Grid item xs={6} md={3}>
+        <Grid item sm={6} md={3} mt={5}>
           <CardDefault id="card2" image={leticia} onClickCard={clicked} />
         </Grid>
-        <Grid item xs={6} md={3}>
+        <Grid item sm={6} md={3} mt={5}>
           <CardDefault id="card3" image={marcos} onClickCard={clicked} />
         </Grid>
-        <Grid item xs={6} md={3}>
+        <Grid item sm={6} md={3} mt={5}>
           <CardDefault id="card4" image={windson} onClickCard={clicked} />
         </Grid>
       </Grid>
